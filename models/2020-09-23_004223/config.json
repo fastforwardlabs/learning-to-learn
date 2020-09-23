@@ -1,0 +1,22 @@
+{
+  "folder": "/storage/smb79ck2/ndata",
+  "dataset": "quickdraw",
+  "num_training_samples": 100,
+  "random_seed": 123,
+  "output_folder": "./models",
+  "num_ways": 10,
+  "num_shots": 1,
+  "num_shots_test": 1,
+  "hidden_size": 20,
+  "batch_size": 25,
+  "num_steps": 5,
+  "num_epochs": 50,
+  "num_batches": 100,
+  "step_size": 0.01,
+  "first_order": false,
+  "meta_lr": 0.001,
+  "num_workers": 1,
+  "verbose": true,
+  "use_cuda": true,
+  "model_path": "/home/paperspace/learning-to-learn/models/2020-09-23_004223/model.th"
+}
