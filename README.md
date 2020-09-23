@@ -6,20 +6,49 @@ This repo accompanies the code from our [report](ff15.fastforwardlabs.com) discu
 
 Step 1: Install from Torchmeta from source
 
-    ```
+```
     git clone https://github.com/nishamuktewar/pytorch-meta.git
     conda create --name meta_env python=3.7 ipykernel
     conda activate meta_env
     cd pytorch-meta
     pip install -e .
-    ```
+```
 Step 2: Install other libraries
 
-    ```
+```
     conda install -c anaconda scikit-learn
-    ```
+```
 
 ## Repo structure
+```
+.
+├── figures
+│   ├── 10.png
+│   └── 11.png
+├── maml
+│   ├── datasets.py
+│   ├── __init__.py
+│   ├── metalearners
+│   │   ├── __init__.py
+│   │   ├── maml.py
+│   │   ├── meta_sgd.py
+│   ├── model.py
+│   └── utils.py
+├── models
+│   ├── 2020-09-22_164258
+│   │   ├── config.json
+│   │   ├── model_results.json
+│   │   ├── model.th
+│   │   ├── results.json
+│   │   └── run.txt
+├── notebooks
+│   ├── visualize_data.ipynb
+│   ├── visualize_runs_100samples.ipynb
+│   └── visualize_runs_20samples.ipynb
+├── README.md
+├── test.py
+└── train.py
+```
 
 ## Run experiments
 
