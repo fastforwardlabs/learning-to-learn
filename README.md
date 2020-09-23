@@ -1,10 +1,10 @@
 # Meta-learning: Learning to learn
 
-This repo accompanies the code from our [report](ff15.fastforwardlabs.com) discussed in the Experiment section
+This repo accompanies the code from our [report](http://meta-learning.fastforwardlabs.com/) discussed in the Experiment section
 
 ## Setup environment
 
-Step 1: Install from Torchmeta from source
+Step 1: Install Torchmeta from source
 
 ```
     git clone https://github.com/nishamuktewar/pytorch-meta.git
