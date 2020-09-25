@@ -1,6 +1,6 @@
 # Meta-Learning: Learning to learn
 
-This repo accompanies the code from our [report](http://meta-learning.fastforwardlabs.com/) discussed in the Experiment section
+This repo accompanies the code from our [report](http://meta-learning.fastforwardlabs.com/) discussed in the Experiment section. 
 
 ## Setup environment
 
@@ -82,16 +82,24 @@ python test.py ./models/<<date-timestamp>>/config.json
 
 ### Results
 
-![5-way, 1/5/10-shot results based on 100 random sampled images](figures/10.png)
+<figure>
+<img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/10.png" title="5-way, 1/5/10-shot results based on 20 random sampled images">
+<figcaption>"5-way, 1/5/10-shot results based on 100 random sampled images"</figcaption>
+</figure>
 
-![10-way, 1/5/10-shot results based on 100 random sampled images](figures/11.png)
+<figure>
+<img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/11.png" title="10-way, 1/5/10-shot results based on 20 random sampled images">    
+<figcaption>"10-way, 1/5/10-shot results based on 100 random sampled images"</figcaption>
+</figure>
 
 <figure>
 <img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/12.png" title="5-way, 1/5/10-shot results based on 20 random sampled images">
+<figcaption>"5-way, 1/5/10-shot results based on 20 random sampled images"</figcaption>
+</figure>
 
-<img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/13.png" title="10-way, 1/5/10-shot results based on 20 random sampled images">
-    
-<figcaption>Results based on 20 random sampled images</figcaption>
+<figure>
+<img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/13.png" title="10-way, 1/5/10-shot results based on 20 random sampled images">    
+<figcaption>"10-way, 1/5/10-shot results based on 20 random sampled images"</figcaption>
 </figure>
 
 ## References
