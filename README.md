@@ -86,11 +86,9 @@ python test.py ./models/<<date-timestamp>>/config.json
 
 ![10-way, 1/5/10-shot results based on 100 random sampled images](figures/11.png)
 
-<img align="left" width="300" height="200" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/12.png" caption="5-way, 1/5/10-shot results based on 100 random sampled images">
+<img align="left" width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/12.png" title="5-way, 1/5/10-shot results based on 100 random sampled images">
 
-![5-way, 1/5/10-shot results based on 100 random sampled images](figures/12.png)
-
-![10-way, 1/5/10-shot results based on 100 random sampled images](figures/13.png)
+<img align="left" width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/13.png" title="10-way, 1/5/10-shot results based on 100 random sampled images">
 
 ## References
 
