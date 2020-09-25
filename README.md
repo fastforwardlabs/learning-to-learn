@@ -1,4 +1,4 @@
-# Meta-learning: Learning to learn
+# Meta-Learning: Learning to learn
 
 This repo accompanies the code from our [report](http://meta-learning.fastforwardlabs.com/) discussed in the Experiment section
 
@@ -57,22 +57,21 @@ Step 2: Install other libraries
 - Run the following command to train a meta-learning model on the meta-training dataset. Note that this step will take a few hours if run for the first time and that is because it downloads the entire [Quick Draw!](https://quickdraw.withgoogle.com/data) dataset and transforms it into train/validation/test meta-datasets to be consumed during training and evaluation.
 
 ```
-python train.py /storage/smb79ck2/ndata/ \
+python train.py <<dataset path>> \
     --use-cuda \
     --num-training-samples 20 \
     --num-ways 5 \
-    --num-shots 5 \
-    --num-shots-test 5 \
+    --num-shots 1 \
+    --num-shots-test 1 \
     --num-steps 5 \
     --hidden-size 20 \
     --batch-size 10 \
     --num-batches 100 \
-    --num-epochs 10 \
-    --step-size 0.01 \
-    --meta-lr 0.001 &
+    --num-epochs 50 \
+    --step-size 0.005 \
+    --meta-lr 0.0005 
 ```
 - The configuration, model and result files are saved in the ./models folder using the date-timestamp as the foldername
-
 
 ### Meta-inference
 
@@ -87,6 +86,11 @@ python test.py ./models/<<date-timestamp>>/config.json
 
 ![10-way, 1/5/10-shot results based on 100 random sampled images](figures/11.png)
 
+<img align="left" width="300" height="200" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/12.png" caption="5-way, 1/5/10-shot results based on 100 random sampled images">
+
+![5-way, 1/5/10-shot results based on 100 random sampled images](figures/12.png)
+
+![10-way, 1/5/10-shot results based on 100 random sampled images](figures/13.png)
 
 ## References
 
