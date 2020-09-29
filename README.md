@@ -1,6 +1,6 @@
 # Meta-Learning: Learning to learn
 
-This repo accompanies the code from our [report](http://meta-learning.fastforwardlabs.com/) discussed in the Experiment section. 
+This repo accompanies the code from our [Meta-Learning report](http://meta-learning.fastforwardlabs.com/) discussed in the Experiment section. 
 
 ## Setup environment
 
@@ -24,7 +24,9 @@ Step 2: Install other libraries
 .
 ├── figures
 │   ├── 10.png
-│   └── 11.png
+│   ├── 11.png
+│   ├── 12.png
+│   └── 13.png
 ├── maml
 │   ├── datasets.py
 │   ├── __init__.py
@@ -41,20 +43,24 @@ Step 2: Install other libraries
 │   │   ├── model.th
 │   │   ├── results.json
 │   │   └── run.txt
+.
+.
+.
 ├── notebooks
-│   ├── visualize_data.ipynb
 │   ├── visualize_runs_100samples.ipynb
 │   └── visualize_runs_20samples.ipynb
 ├── README.md
 ├── test.py
 └── train.py
+
 ```
 
 ## Run experiments
 
 ### Meta-training
 
-- Run the following command to train a meta-learning model on the meta-training dataset. Note that this step will take a few hours if run for the first time and that is because it downloads the entire [Quick Draw!](https://quickdraw.withgoogle.com/data) dataset and transforms it into train/validation/test meta-datasets to be consumed during training and evaluation.
+- Run the following command to train a meta-learning model on the meta-training dataset.    
+Note that this step will take a few hours if run for the first time. That is because it downloads the entire [Quick Draw!](https://quickdraw.withgoogle.com/data) dataset and transforms it into train/validation/test meta-datasets to be consumed during training and evaluation.
 
 ```
 python train.py <<dataset path>> \
@@ -71,7 +77,7 @@ python train.py <<dataset path>> \
     --step-size 0.005 \
     --meta-lr 0.0005 
 ```
-- The configuration, model and result files are saved in the ./models folder using the date-timestamp as the foldername
+- The configuration, model and result files are saved in the `./models` folder using the date-timestamp as the foldername
 
 ### Meta-inference
 
@@ -84,22 +90,22 @@ python test.py ./models/<<date-timestamp>>/config.json
 
 <figure>
 <img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/10.png" title="5-way, 1/5/10-shot results based on 20 random sampled images">
-<figcaption>"5-way, 1/5/10-shot results based on 100 random sampled images"</figcaption>
+<figcaption>5-way, 1/5/10-shot results based on 100 random sampled images</figcaption>
 </figure>
 
 <figure>
 <img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/11.png" title="10-way, 1/5/10-shot results based on 20 random sampled images">    
-<figcaption>"10-way, 1/5/10-shot results based on 100 random sampled images"</figcaption>
+<figcaption>10-way, 1/5/10-shot results based on 100 random sampled images</figcaption>
 </figure>
 
 <figure>
 <img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/12.png" title="5-way, 1/5/10-shot results based on 20 random sampled images">
-<figcaption>"5-way, 1/5/10-shot results based on 20 random sampled images"</figcaption>
+<figcaption>5-way, 1/5/10-shot results based on 20 random sampled images</figcaption>
 </figure>
 
 <figure>
 <img width="500" height="400" src="https://github.com/fastforwardlabs/learning-to-learn/blob/master/figures/13.png" title="10-way, 1/5/10-shot results based on 20 random sampled images">    
-<figcaption>"10-way, 1/5/10-shot results based on 20 random sampled images"</figcaption>
+<figcaption>10-way, 1/5/10-shot results based on 20 random sampled images</figcaption>
 </figure>
 
 ## References
